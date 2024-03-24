@@ -122,7 +122,7 @@ const Cart = () => {
 
                     <div className="flex justify-between !text-base font-medium">
                       <dt>Total</dt>
-                      <dd>£{totalPrice - 45}</dd>
+                      <dd>£{totalPrice ? totalPrice - 45 : 0}</dd>
                     </div>
                   </dl>
 

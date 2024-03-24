@@ -7,6 +7,8 @@ import Cart from "./components/Cart/Cart";
 import Footer from "./components/footer/Footer";
 import ProductDetails from "./components/ProductDetails/ProductDetails";
 import NoPageFound from "./components/NoPageFound/NoPageFound";
+import SlowUi from "./components/SlowUI/SlowUi";
+import DetailsUi from "./components/SlowUI/DetailsUi";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<ProductDetails />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/slowui" element={<SlowUi />} />
+        <Route path="/slowui/:id/:id" element={<DetailsUi />} />
         <Route path="*" element={<NoPageFound />} />
       </Routes>
       <Footer />
