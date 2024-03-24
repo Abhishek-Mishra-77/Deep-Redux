@@ -9,6 +9,7 @@ import ProductDetails from "./components/ProductDetails/ProductDetails";
 import NoPageFound from "./components/NoPageFound/NoPageFound";
 import SlowUi from "./components/SlowUI/SlowUi";
 import DetailsUi from "./components/SlowUI/DetailsUi";
+import ThunkTest from "./components/thunkTest/ThunkTest";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/slowui" element={<SlowUi />} />
         <Route path="/slowui/:id/:id" element={<DetailsUi />} />
+        <Route path="/thunk" element={<ThunkTest />} />
         <Route path="*" element={<NoPageFound />} />
       </Routes>
       <Footer />

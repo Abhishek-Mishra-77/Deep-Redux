@@ -13,7 +13,7 @@ const UiCategory = ({ section }) => {
               to={`/slowui/${section.id}/${component.id}`}
               className="block rounded-xl border bg-teal-700 border-gray-800 p-8 shadow-xl  transition hover:border-pink-500/10 hover:shadow-pink-500/10"
             >
-              <span className="text-6xl text-purple-700">{component.icon}</span>
+              <span className="text-4xl text-purple-700">{component.icon}</span>
 
               <h2 className="mt-4 text-xl font-bold text-white">
                 {component.title}
